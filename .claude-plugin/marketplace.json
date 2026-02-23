@@ -1,0 +1,16 @@
+{
+  "name": "0-rok-plugins",
+  "owner": {
+    "name": "0-ROK"
+  },
+  "plugins": [
+    {
+      "name": "oh-my-rubber-duck",
+      "source": ".",
+      "description": "러버덕 디버깅 모드 - 답을 주지 않고 질문으로 유도합니다",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["debugging", "rubber-duck", "education"]
+    }
+  ]
+}

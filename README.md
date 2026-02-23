@@ -1,29 +1,25 @@
 # oh-my-rubber-duck
 
-Harvard CS50의 러버덕 디버거에서 영감을 받은 Claude Code 스킬입니다.
+Harvard CS50의 러버덕 디버거에서 영감을 받은 Claude Code 플러그인입니다.
 
 코드의 버그를 직접 알려주는 대신, 소크라테스식 질문을 통해 사용자가 스스로 문제를 발견하도록 유도합니다.
 
 ## 설치
 
-```bash
-# 저장소 클론
-git clone https://github.com/0-ROK/oh-my-rubber-duck.git
+### Plugin으로 설치 (권장)
 
-# 스킬 파일과 아트 스크립트를 Claude Code 커맨드 디렉토리에 복사
-mkdir -p ~/.claude/commands
-cp oh-my-rubber-duck/rubber-duck.md ~/.claude/commands/
-cp oh-my-rubber-duck/duck-art.sh ~/.claude/commands/
+Claude Code에서:
+
+```
+/plugin marketplace add 0-ROK/oh-my-rubber-duck
+/plugin install oh-my-rubber-duck@0-rok-plugins
 ```
 
-또는 파일을 직접 다운로드:
+### 로컬 설치
 
 ```bash
-mkdir -p ~/.claude/commands
-curl -o ~/.claude/commands/rubber-duck.md \
-  https://raw.githubusercontent.com/0-ROK/oh-my-rubber-duck/main/rubber-duck.md
-curl -o ~/.claude/commands/duck-art.sh \
-  https://raw.githubusercontent.com/0-ROK/oh-my-rubber-duck/main/duck-art.sh
+git clone https://github.com/0-ROK/oh-my-rubber-duck.git
+claude --plugin-dir ./oh-my-rubber-duck
 ```
 
 ## 사용법
@@ -40,6 +36,8 @@ Claude Code에서 `/rubber-duck` 명령으로 호출합니다.
 # 인자 없이 시작
 /rubber-duck
 ```
+
+> 플러그인으로 설치한 경우 `/oh-my-rubber-duck:rubber-duck`으로도 호출할 수 있습니다.
 
 ## 러버덕 디버깅이란?
 
