@@ -1,5 +1,5 @@
 {
-  "name": "oh-my-rubber-duck",
+  "name": "rubber-duck",
   "version": "1.0.0",
   "description": "러버덕 디버깅 모드 - 답을 주지 않고 질문으로 유도합니다",
   "author": {
@@ -7,5 +7,10 @@
   },
   "repository": "https://github.com/0-ROK/oh-my-rubber-duck",
   "license": "MIT",
-  "keywords": ["debugging", "rubber-duck", "소크라테스", "education"]
+  "keywords": [
+    "debugging",
+    "rubber-duck",
+    "소크라테스",
+    "education"
+  ]
 }

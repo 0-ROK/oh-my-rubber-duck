@@ -12,32 +12,32 @@ Claude Code에서:
 
 ```
 /plugin marketplace add 0-ROK/oh-my-rubber-duck
-/plugin install oh-my-rubber-duck@0-rok-plugins
+/plugin install oh-my-rubber-duck@oh-my-rubber-duck
 ```
 
 ### 로컬 설치
 
 ```bash
 git clone https://github.com/0-ROK/oh-my-rubber-duck.git
-claude --plugin-dir ./oh-my-rubber-duck
+claude --plugin-dir ./oh-my-rubber-duck/plugins/oh-my-rubber-duck
 ```
 
 ## 사용법
 
-Claude Code에서 `/rubber-duck` 명령으로 호출합니다.
+Claude Code에서 `/oh-my-rubber-duck:rubber-duck` 명령으로 호출합니다.
 
 ```
 # 파일을 지정해서 디버깅
-/rubber-duck src/utils/sort.ts
+/oh-my-rubber-duck:rubber-duck src/utils/sort.ts
 
 # 문제를 설명하며 디버깅
-/rubber-duck 배열 정렬이 제대로 안 돼요
+/oh-my-rubber-duck:rubber-duck 배열 정렬이 제대로 안 돼요
 
 # 인자 없이 시작
-/rubber-duck
+/oh-my-rubber-duck:rubber-duck
 ```
 
-> 플러그인으로 설치한 경우 `/oh-my-rubber-duck:rubber-duck`으로도 호출할 수 있습니다.
+> 로컬 설치한 경우 `/rubber-duck`으로 짧게 호출할 수도 있습니다.
 
 ## 러버덕 디버깅이란?
 

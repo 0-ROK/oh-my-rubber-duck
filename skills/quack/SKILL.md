@@ -1,5 +1,5 @@
 ---
-name: rubber-duck
+name: quack
 description: 러버덕 디버깅 모드 - 답을 주지 않고 질문으로 유도합니다
 argument-hint: [파일경로 또는 문제 설명]
 disable-model-invocation: true
